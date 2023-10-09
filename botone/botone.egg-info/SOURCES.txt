@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+botone/__init__.py
+botone/__main__.py
+botone/bot.py
+botone.egg-info/PKG-INFO
+botone.egg-info/SOURCES.txt
+botone.egg-info/dependency_links.txt
+botone.egg-info/requires.txt
+botone.egg-info/top_level.txt
+botone/resources/start.png
