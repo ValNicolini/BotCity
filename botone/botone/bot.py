@@ -1,25 +1,4 @@
 
-"""
-WARNING:
-
-Please make sure you install the bot with `pip install -e .` in order to get all the dependencies
-on your Python environment.
-
-Also, if you are using PyCharm or another IDE, make sure that you use the SAME Python interpreter
-as your IDE.
-
-If you get an error like:
-```
-ModuleNotFoundError: No module named 'botcity'
-```
-
-This means that you are likely using a different Python interpreter than the one used to install the bot.
-To fix this, you can either:
-- Use the same interpreter as your IDE and install your bot with `pip install -e .`
-- Use the same interpreter as the one used to install the bot (`pip install -e .`)
-
-Please refer to the documentation for more information at https://documentation.botcity.dev/
-"""
 # pip install cookiecutter
 # cookiecutter https://github.com/botcity-dev/bot-python-template
 # pip install -e botone
@@ -45,6 +24,18 @@ class Bot(DesktopBot):
         if not self.find( "Pesquisar", matching=0.97, waiting_time=10000):
            self.not_found("Pesquisar")
         self.click()
+        self.paste('Jhully Nayara Azevedo')
+        if not self.find( "Nome", matching=0.97, waiting_time=10000):
+            self.not_found("Nome")
+        self.click()
+        if not self.find( "Mensagem", matching=0.97, waiting_time=10000):
+            self.not_found("Mensagem")
+        self.click()
+        self.paste('Jhully isso é apenas um teste!')
+        self.enter()
+        
+        
+        
 
         # Uncomment to mark this task as finished on BotMaestro
         # self.maestro.finish_task(

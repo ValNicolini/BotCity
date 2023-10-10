@@ -11,4 +11,5 @@ botone.egg-info/SOURCES.txt
 botone.egg-info/dependency_links.txt
 botone.egg-info/requires.txt
 botone.egg-info/top_level.txt
+botone/resources/Pesquisar.png
 botone/resources/start.png
