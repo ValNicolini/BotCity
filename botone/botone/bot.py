@@ -1,3 +1,4 @@
+
 """
 WARNING:
 
@@ -40,7 +41,10 @@ class Bot(DesktopBot):
         # activity_id = task.activity_id
 
         # Opens the BotCity website.
-        self.browse("http://www.botcity.dev")
+        self.execute(r'C:\Users\silva.valdenir\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Microsoft Teams classic (work or school).lnk')
+        if not self.find( "Pesquisar", matching=0.97, waiting_time=10000):
+           self.not_found("Pesquisar")
+        self.click()
 
         # Uncomment to mark this task as finished on BotMaestro
         # self.maestro.finish_task(
