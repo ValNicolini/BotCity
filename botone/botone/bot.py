@@ -20,29 +20,22 @@ class Bot(DesktopBot):
         # activity_id = task.activity_id
 
         # Opens the BotCity website.
-        self.execute(r'C:\Users\silva.valdenir\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Microsoft Teams classic (work or school).lnk')
+        # self.execute(r'C:\Users\silva.valdenir\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Microsoft Teams classic (work or school).lnk')
+        self.execute(r'C:\Users\Val_N\OneDrive\Área de Trabalho\Spotify.lnk')
         if not self.find( "Pesquisar", matching=0.97, waiting_time=10000):
            self.not_found("Pesquisar")
         self.click()
-        self.paste('Jhully Nayara Azevedo')
-        if not self.find( "Nome", matching=0.97, waiting_time=10000):
-            self.not_found("Nome")
-        self.click()
-        if not self.find( "Mensagem", matching=0.97, waiting_time=10000):
-            self.not_found("Mensagem")
-        self.click()
-        self.paste('Jhully isso é apenas um teste!')
-        self.enter()
-        
-        
-        
+        # self.paste('Jhully Nayara Azevedo')
+        # if not self.find( "Nome", matching=0.97, waiting_time=10000):
+        #     self.not_found("Nome")
+        # self.click()
+        # if not self.find( "Mensagem", matching=0.97, waiting_time=10000):
+        #     self.not_found("Mensagem")
+        # self.click()
+        # self.paste('Jhully isso é apenas um teste!')
+        # self.enter()
 
-        # Uncomment to mark this task as finished on BotMaestro
-        # self.maestro.finish_task(
-        #     task_id=execution.task_id,
-        #     status=AutomationTaskFinishStatus.SUCCESS,
-        #     message="Task Finished OK."
-        # )
+
 
     def not_found(self, label):
         print(f"Element not found: {label}")
