@@ -20,9 +20,11 @@ class Bot(DesktopBot):
         # activity_id = task.activity_id
 
         # Opens the BotCity website.
-        self.execute(r'C:\Users\Val_N\OneDrive\Área de Trabalho\Spotify.lnk')
+        # self.execute(r'C:\Users\Val_N\OneDrive\Área de Trabalho\Spotify.lnk')
+        self.execute(r'C:\Users\silva.valdenir\Desktop\Spotify.lnk')
         if not self.find( "Busca", matching=0.97, waiting_time=10000):
             self.not_found("Busca")
+
         self.click()
         
         if not self.find( "Digitar", matching=0.97, waiting_time=10000):
