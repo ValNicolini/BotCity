@@ -20,20 +20,32 @@ class Bot(DesktopBot):
         # activity_id = task.activity_id
 
         # Opens the BotCity website.
-        # self.execute(r'C:\Users\silva.valdenir\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Microsoft Teams classic (work or school).lnk')
         self.execute(r'C:\Users\Val_N\OneDrive\Área de Trabalho\Spotify.lnk')
-        if not self.find( "Pesquisar", matching=0.97, waiting_time=10000):
-           self.not_found("Pesquisar")
+        if not self.find( "Busca", matching=0.97, waiting_time=10000):
+            self.not_found("Busca")
         self.click()
-        # self.paste('Jhully Nayara Azevedo')
-        # if not self.find( "Nome", matching=0.97, waiting_time=10000):
-        #     self.not_found("Nome")
-        # self.click()
-        # if not self.find( "Mensagem", matching=0.97, waiting_time=10000):
-        #     self.not_found("Mensagem")
-        # self.click()
-        # self.paste('Jhully isso é apenas um teste!')
-        # self.enter()
+        
+        if not self.find( "Digitar", matching=0.97, waiting_time=10000):
+            self.not_found("Digitar")
+        self.click()
+        
+        self.paste('Queen')
+
+        if not self.find( "Melhores", matching=0.97, waiting_time=10000):
+            self.not_found("Melhores")
+        self.click()
+        if not self.find( "Esperar", matching=0.97, waiting_time=10000):
+            self.not_found("Esperar")
+        self.scroll_down(600)
+        if not self.find( "Musica", matching=0.97, waiting_time=10000):
+            self.not_found("Musica")
+        self.double_click()
+
+        if not self.find( "Play", matching=0.97, waiting_time=10000):
+            self.not_found("Play")
+        
+        
+
 
 
 
