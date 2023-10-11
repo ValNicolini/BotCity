@@ -109,6 +109,33 @@ class Bot(DesktopBot):
             self.not_found("Arquivo")
         
         self.double_click()
+        if not self.find( "Fecha mensagem", matching=0.97, waiting_time=10000):
+            self.not_found("Fecha mensagem")
+        self.click()
+        self.wait(1000)
+        if not self.find( "Clica", matching=0.97, waiting_time=10000):
+            self.not_found("Clica")
+        self.click()
+        self.scroll_down(4800)
+        self.wait(1000)
+        self.scroll_up(4800)
+        if not self.find("Fechar", matching=0.97, waiting_time=10000):
+            self.not_found("Fechar")
+        self.click()
+        if not self.find("Fecha  janela", matching=0.97, waiting_time=10000):
+            self.not_found("Fecha  janela")
+        self.click()
+        
+
+
+        
+        
+
+
+        
+       
+
+
         
         
         
