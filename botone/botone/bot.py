@@ -22,30 +22,50 @@ class Bot(DesktopBot):
         # Opens the BotCity website.
         # self.execute(r'C:\Users\Val_N\OneDrive\Área de Trabalho\Spotify.lnk')
         self.execute(r'C:\Users\silva.valdenir\Desktop\Spotify.lnk')
+        #if not self.find( "Busca", matching=0.97, waiting_time=10000):
+            #self.not_found("Busca")
         if not self.find( "Busca", matching=0.97, waiting_time=10000):
-            self.not_found("Busca")
+             self.not_found("Busca")
+        self.click()
+         
 
-        self.click()
         
-        if not self.find( "Digitar", matching=0.97, waiting_time=10000):
-            self.not_found("Digitar")
-        self.click()
-        
+
+        # if not self.find( "Digitar", matching=0.97, waiting_time=10000):
+        #     self.not_found("Digitar")
+        # self.click()
+        # self.paste('Queen')
+          
+        if not self.find( "Digitar", matching=0.97, waiting_time=1000):
+              self.not_found("Digitar")
         self.paste('Queen')
 
+        # if not self.find( "Melhores", matching=0.97, waiting_time=10000):
+        #      self.not_found("Melhores")
         if not self.find( "Melhores", matching=0.97, waiting_time=10000):
             self.not_found("Melhores")
         self.click()
+
+        # if not self.find( "Esperar", matching=0.97, waiting_time=10000):
+        #    self.not_found("Esperar")
+        # self.scroll_down(600)
+        # if not self.find( "Musica", matching=0.97, waiting_time=10000):
+        #      self.not_found("Musica")
         if not self.find( "Esperar", matching=0.97, waiting_time=10000):
             self.not_found("Esperar")
-        self.scroll_down(600)
+        self.scroll_down(700)
         if not self.find( "Musica", matching=0.97, waiting_time=10000):
             self.not_found("Musica")
+        
         self.double_click()
-
         if not self.find( "Play", matching=0.97, waiting_time=10000):
             self.not_found("Play")
+        self.click()
         
+
+        # if not self.find( "Play", matching=0.97, waiting_time=10000):
+        #     self.not_found("Play")
+        #
         
 
 
