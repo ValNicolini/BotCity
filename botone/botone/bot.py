@@ -68,6 +68,7 @@ class Bot(DesktopBot):
         # #
         #
 
+
         self.execute(r'C:\Users\Public\Desktop\Firefox.lnk')
         if not self.find( "Oficial", matching=0.97, waiting_time=10000):
             self.not_found("Oficial")
@@ -87,45 +88,45 @@ class Bot(DesktopBot):
         if not self.find( "Data", matching=0.97, waiting_time=10000):
             self.not_found("Data")
         self.click()
-        if not self.find( "Digitar", matching=0.97, waiting_time=10000):
-            self.not_found("Digitar")
-        self.paste('11/10/2023')
-        if not self.find( "Data1", matching=0.97, waiting_time=10000):
-            self.not_found("Data1")
-        self.click()
-        self.paste('11/10/2023')
-        if not self.find( "Baixar", matching=0.97, waiting_time=10000):
-            self.not_found("Baixar")
-        self.click()
-        if not self.find( "Ok", matching=0.97, waiting_time=10000):
-            self.not_found("Ok")
-        self.click()
-        if not self.find( "Espera", matching=0.97, waiting_time=10000):
-            self.not_found("Espera")
-        self.execute(r'C:\Users\silva.valdenir\Downloads')
-
-        
-        if not self.find( "Arquivo", matching=0.97, waiting_time=10000):
-            self.not_found("Arquivo")
-        
-        self.double_click()
-        if not self.find( "Fecha mensagem", matching=0.97, waiting_time=10000):
-            self.not_found("Fecha mensagem")
-        self.click()
-        self.wait(1000)
-        if not self.find( "Clica", matching=0.97, waiting_time=10000):
-            self.not_found("Clica")
-        self.click()
-        self.scroll_down(4800)
-        self.wait(1000)
-        self.scroll_up(4800)
-        if not self.find("Fechar", matching=0.97, waiting_time=10000):
-            self.not_found("Fechar")
-        self.click()
-        if not self.find("Fecha  janela", matching=0.97, waiting_time=10000):
-            self.not_found("Fecha  janela")
-        self.click()
-        
+        # if not self.find( "Digitar", matching=0.97, waiting_time=10000):
+        #     self.not_found("Digitar")
+        # self.paste('11/10/2023')
+        # if not self.find( "Data1", matching=0.97, waiting_time=10000):
+        #     self.not_found("Data1")
+        # self.click()
+        # self.paste('11/10/2023')
+        # if not self.find( "Baixar", matching=0.97, waiting_time=10000):
+        #     self.not_found("Baixar")
+        # self.click()
+        # if not self.find( "Ok", matching=0.97, waiting_time=10000):
+        #     self.not_found("Ok")
+        # self.click()
+        # if not self.find( "Espera", matching=0.97, waiting_time=10000):
+        #     self.not_found("Espera")
+        # self.execute(r'C:\Users\silva.valdenir\Downloads')
+        #
+        #
+        # if not self.find( "Arquivo", matching=0.97, waiting_time=10000):
+        #     self.not_found("Arquivo")
+        #
+        # self.double_click()
+        # if not self.find( "Fecha mensagem", matching=0.97, waiting_time=10000):
+        #     self.not_found("Fecha mensagem")
+        # self.click()
+        # self.wait(1000)
+        # if not self.find( "Clica", matching=0.97, waiting_time=10000):
+        #     self.not_found("Clica")
+        # self.click()
+        # self.scroll_down(4800)
+        # self.wait(1000)
+        # self.scroll_up(4800)
+        # if not self.find("Fechar", matching=0.97, waiting_time=10000):
+        #     self.not_found("Fechar")
+        # self.click()
+        # if not self.find("Fecha  janela", matching=0.97, waiting_time=10000):
+        #     self.not_found("Fecha  janela")
+        # self.click()
+        #
 
 
         
