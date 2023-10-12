@@ -64,43 +64,43 @@ class Bot(DesktopBot):
         #
         #
         # # if not self.find( "Play", matching=0.97, waiting_time=10000):
-        # #     self.not_found("Play")Escrevendo como humano!
+        # #     self.not_found("Play")
 
 
-        # self.execute(r'C:\Users\Public\Desktop\Firefox.lnk')
-        # if not self.find( "Oficial", matching=0.97, waiting_time=10000):
-        #     self.not_found("Oficial")
-        # self.click()
-        # if not self.find( "Aceitar", matching=0.97, waiting_time=10000):
-        #     self.not_found("Aceitar")
-        # self.click()
-        # if not self.find( "Financeiro", matching=0.97, waiting_time=10000):
-        #     self.not_found("Financeiro")
-        # self.click()
-        # if not self.find( "Relatorios", matching=0.97, waiting_time=10000):
-        #     self.not_found("Relatorios")
-        # self.click()
-        # if not self.find( "Boletos pagos", matching=0.97, waiting_time=10000):
-        #     self.not_found("Boletos pagos")
-        # self.click()
-        # if not self.find( "Data", matching=0.97, waiting_time=10000):
-        #     self.not_found("Data")
-        # self.click()
-        # if not self.find( "Digitar", matching=0.97, waiting_time=10000):
-        #     self.not_found("Digitar")
-        # self.paste('11/10/2023')
-        # if not self.find( "Data1", matching=0.97, waiting_time=10000):
-        #     self.not_found("Data1")
-        # self.click()
-        # self.paste('11/10/2023')
-        # if not self.find( "Baixar", matching=0.97, waiting_time=10000):
-        #     self.not_found("Baixar")
-        # self.click()
-        # if not self.find( "Ok", matching=0.97, waiting_time=10000):
-        #     self.not_found("Ok")
-        # self.click()
-        # if not self.find( "Espera", matching=0.97, waiting_time=10000):
-        #     self.not_found("Espera")
+        self.execute(r'C:\Users\Public\Desktop\Firefox.lnk')
+        if not self.find( "Oficial", matching=0.97, waiting_time=10000):
+            self.not_found("Oficial")
+        self.click()
+        if not self.find( "Aceitar", matching=0.97, waiting_time=10000):
+            self.not_found("Aceitar")
+        self.click()
+        if not self.find( "Financeiro", matching=0.97, waiting_time=10000):
+            self.not_found("Financeiro")
+        self.click()
+        if not self.find( "Relatorios", matching=0.97, waiting_time=10000):
+            self.not_found("Relatorios")
+        self.click()
+        if not self.find( "Boletos pagos", matching=0.97, waiting_time=10000):
+            self.not_found("Boletos pagos")
+        self.click()
+        if not self.find( "Data", matching=0.97, waiting_time=10000):
+            self.not_found("Data")
+        self.click()
+        if not self.find( "Digitar", matching=0.97, waiting_time=10000):
+            self.not_found("Digitar")
+        self.paste('11/10/2023')
+        if not self.find( "Data1", matching=0.97, waiting_time=10000):
+            self.not_found("Data1")
+        self.click()
+        self.paste('11/10/2023')
+        if not self.find( "Baixar", matching=0.97, waiting_time=10000):
+            self.not_found("Baixar")
+        self.click()
+        if not self.find( "Ok", matching=0.97, waiting_time=10000):
+            self.not_found("Ok")
+        self.click()
+        if not self.find( "Espera", matching=0.97, waiting_time=10000):
+            self.not_found("Espera")
         self.execute(r'C:\Users\silva.valdenir\Downloads')
 
 
@@ -112,18 +112,32 @@ class Bot(DesktopBot):
             self.not_found("Fecha mensagem")
         self.click()
         self.wait(1000)
-        if not self.find( "Clica", matching=0.97, waiting_time=10000):
-            self.not_found("Clica")
+        if not self.find( "ClicarCelula", matching=0.97, waiting_time=10000):
+           self.not_found("ClicarCelula")
         self.click()
         self.scroll_down(4800)
         self.wait(1000)
         self.scroll_up(4800)
-        if not self.find("Fechar", matching=0.97, waiting_time=10000):
+        if not self.find( "Fechar", matching=0.97, waiting_time=10000):
             self.not_found("Fechar")
         self.click()
-        if not self.find("Fecha  janela", matching=0.97, waiting_time=10000):
+        if not self.find( "Fecha  janela", matching=0.97, waiting_time=10000):
             self.not_found("Fecha  janela")
         self.click()
+        self.execute('notepad.exe')
+        self.wait(1000)
+        self.kb_type('Eu praticamente sou humano!', 200)
+        self.enter()
+        self.kb_type('Gostou Gi', 200)
+        self.paste('?')
+        self.wait(2000)
+        if not self.find( "FechaNote", matching=0.97, waiting_time=10000):
+            self.not_found("FechaNote")
+        self.click()
+        if not self.find( "NaoSalvar", matching=0.97, waiting_time=10000):
+            self.not_found("NaoSalvar")
+        self.click()
+        
 
 
 
