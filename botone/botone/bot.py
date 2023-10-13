@@ -11,7 +11,7 @@ from botcity.core import DesktopBot
 
 class Bot(DesktopBot):
     def action(self, execution=None):
-        # Uncomment to silence Maestro errors when disconnected
+#         # Uncomment to silence Maestro errors when disconnected
         # if self.maestro:
         #     self.maestro.RAISE_NOT_CONNECTED = False
 
@@ -128,7 +128,7 @@ class Bot(DesktopBot):
         self.wait(1000)
         self.kb_type('Eu praticamente sou humano!', 200)
         self.enter()
-        self.kb_type('Gostou Gi', 200)
+        self.kb_type('Gostou Crispim', 200)
         self.paste('?')
         self.wait(2000)
         if not self.find( "FechaNote", matching=0.97, waiting_time=10000):
@@ -137,22 +137,12 @@ class Bot(DesktopBot):
         if not self.find( "NaoSalvar", matching=0.97, waiting_time=10000):
             self.not_found("NaoSalvar")
         self.click()
-        
 
 
 
-        
-        
 
 
-        
-       
 
-
-        
-        
-        
-         
 
 
     def not_found(self, label):
