@@ -2,11 +2,21 @@
 # pip install cookiecutter
 # cookiecutter https://github.com/botcity-dev/bot-python-template
 # pip install -e botone
-
+from selenium.webdriver.common.keys import Keys
+from openpyxl import Workbook
+from datetime import date
 from botcity.core import DesktopBot
 # Uncomment the line below for integrations with BotMaestro
 # Using the Maestro SDK
 # from botcity.maestro import *
+
+wb = Workbook()
+ws = wb.active
+ws.title = 'boletos_pagos'
+
+data_atual = date.today()
+data = data_atual.strftime('%d/%m/%Y')
+
 
 
 class Bot(DesktopBot):
@@ -88,11 +98,11 @@ class Bot(DesktopBot):
         # self.click()
         # if not self.find( "Digitar", matching=0.97, waiting_time=10000):
         #     self.not_found("Digitar")
-        # self.paste('11/10/2023')
+        # self.paste(data)
         # if not self.find( "Data1", matching=0.97, waiting_time=10000):
         #     self.not_found("Data1")
         # self.click()
-        # self.paste('11/10/2023')
+        # self.paste(data)
         # if not self.find( "Baixar", matching=0.97, waiting_time=10000):
         #     self.not_found("Baixar")
         # self.click()
@@ -102,24 +112,27 @@ class Bot(DesktopBot):
         # if not self.find( "Espera", matching=0.97, waiting_time=10000):
         #     self.not_found("Espera")
         self.execute(r'C:\Users\silva.valdenir\Downloads')
-
-
+        self.wait(1000)
         if not self.find( "Arquivo", matching=0.97, waiting_time=10000):
             self.not_found("Arquivo")
 
         self.double_click()
+
         if not self.find( "Fecha mensagem", matching=0.97, waiting_time=10000):
             self.not_found("Fecha mensagem")
         self.click()
-        self.wait(1000)
-        self.click_at(577, 356)
+        
+        if not self.find( "Pago", matching=0.97, waiting_time=10000):
+            self.not_found("Pago")
+        self.click()
 
-        # if not self.find( "ClicarCelula", matching=0.97, waiting_time=10000):
-        #    self.not_found("ClicarCelula")
-        # self.click()
-        self.scroll_down(4800)
-        self.wait(1000)
-        self.scroll_up(4800)
+        self.type_keys(['ctrl', 'alt'])
+
+        self.wait(3000)
+
+
+
+
         if not self.find( "Fechar", matching=0.97, waiting_time=10000):
             self.not_found("Fechar")
         self.click()
