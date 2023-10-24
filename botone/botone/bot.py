@@ -111,6 +111,7 @@ class Bot(DesktopBot):
         self.click()
         if not self.find( "Espera", matching=0.97, waiting_time=10000):
             self.not_found("Espera")
+        self.wait(1000)
         self.execute(r'C:\Users\silva.valdenir\Downloads')
         self.wait(1000)
         if not self.find( "Arquivo", matching=0.97, waiting_time=10000):
