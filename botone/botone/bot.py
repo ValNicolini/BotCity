@@ -93,6 +93,7 @@ class Bot(DesktopBot):
         if not self.find( "Boletos pagos", matching=0.97, waiting_time=10000):
             self.not_found("Boletos pagos")
         self.click()
+        self.wait(1000)
         if not self.find( "Data", matching=0.97, waiting_time=10000):
             self.not_found("Data")
         self.click()
@@ -111,7 +112,8 @@ class Bot(DesktopBot):
         self.click()
         if not self.find( "Espera", matching=0.97, waiting_time=10000):
             self.not_found("Espera")
-        self.wait(1000)
+        
+        self.wait(2000)
         self.execute(r'C:\Users\silva.valdenir\Downloads')
         self.wait(1000)
         if not self.find( "Arquivo", matching=0.97, waiting_time=10000):
@@ -128,13 +130,12 @@ class Bot(DesktopBot):
         self.click()
 
         self.type_keys(['ctrl', 'space'])
-        
+        self.wait(1000)
         if not self.find( "Copia_valor_total", matching=0.97, waiting_time=10000):
             self.not_found("Copia_valor_total")
         self.click()
 
-
-        if not self.find("Total", matching=0.97, waiting_time=10000):
+        if not self.find( "Total", matching=0.97, waiting_time=10000):
             self.not_found("Total")
         self.click()
 
@@ -146,18 +147,26 @@ class Bot(DesktopBot):
         self.click()
         self.execute('notepad.exe')
         self.wait(1000)
-        self.kb_type('Baixas Volks.', 200)
+        self.kb_type('Baixas Volks', 200)
         self.enter()
         self.enter()
         self.kb_type('Valor Total: ', 200)
         self.control_v()
-        self.wait(5000)
+        self.wait(4000)
         if not self.find( "FechaNote", matching=0.97, waiting_time=10000):
             self.not_found("FechaNote")
         self.click()
         if not self.find( "NaoSalvar", matching=0.97, waiting_time=10000):
             self.not_found("NaoSalvar")
         self.click()
+        if not self.find( "Apagar", matching=0.97, waiting_time=10000):
+            self.not_found("Apagar")
+        self.click()
+        if not self.find( "Apague", matching=0.97, waiting_time=10000):
+            self.not_found("Apague")
+        self.click()
+        
+        
 
 
 
