@@ -93,7 +93,7 @@ class Bot(DesktopBot):
 
         self.execute('notepad.exe')
         self.wait(1000)
-        self.kb_type('Baixas Volks ', 200)
+        self.kb_type('Baixas Volks', 200)
         self.enter()
         self.kb_type('Valor Total: ', 200)
         self.control_v()
