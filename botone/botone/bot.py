@@ -87,6 +87,7 @@ class Bot(DesktopBot):
             self.not_found("Copia_valor_total")
         self.click()
 
+
         if not self.find("Total", matching=0.97, waiting_time=10000):
             self.not_found("Total")
         self.click()
