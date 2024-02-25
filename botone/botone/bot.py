@@ -4,7 +4,7 @@
 # pip install -e botone
 #from selenium.webdriver.common.keys import Keys
 # from openpyxl import Workbook
-from datetime import date
+# from datetime import date
 from botcity.core import DesktopBot
 # Uncomment the line below for integrations with BotMaestro
 # Using the Maestro SDK
@@ -14,8 +14,8 @@ from botcity.core import DesktopBot
 # ws = wb.active
 # ws.title = 'boletos_pagos'
 
-data_atual = date.today()
-data = data_atual.strftime('%d/%m/%Y')
+# data_atual = date.today()
+# data = data_atual.strftime('%d/%m/%Y')
 
 
 
