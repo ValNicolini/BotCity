@@ -2,17 +2,17 @@
 # pip install cookiecutter
 # cookiecutter https://github.com/botcity-dev/bot-python-template
 # pip install -e botone
-from selenium.webdriver.common.keys import Keys
-from openpyxl import Workbook
+#from selenium.webdriver.common.keys import Keys
+# from openpyxl import Workbook
 from datetime import date
 from botcity.core import DesktopBot
 # Uncomment the line below for integrations with BotMaestro
 # Using the Maestro SDK
 # from botcity.maestro import *
 
-wb = Workbook()
-ws = wb.active
-ws.title = 'boletos_pagos'
+# wb = Workbook()
+# ws = wb.active
+# ws.title = 'boletos_pagos'
 
 data_atual = date.today()
 data = data_atual.strftime('%d/%m/%Y')
