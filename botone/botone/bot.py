@@ -2,23 +2,13 @@
 # pip install cookiecutter
 # cookiecutter https://github.com/botcity-dev/bot-python-template
 # pip install -e botone
-#from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.keys import Keys
 # from openpyxl import Workbook
 # from datetime import date
 from botcity.core import DesktopBot
 # Uncomment the line below for integrations with BotMaestro
 # Using the Maestro SDK
 # from botcity.maestro import *
-
-# wb = Workbook()
-# ws = wb.active
-# ws.title = 'boletos_pagos'
-
-# data_atual = date.today()
-# data = data_atual.strftime('%d/%m/%Y')
-
-
-
 class Bot(DesktopBot):
     def action(self, execution=None):
 #         # Uncomment to silence Maestro errors when disconnected
@@ -31,97 +21,38 @@ class Bot(DesktopBot):
 
         # Opens the BotCity website.
 
-        #
-        # self.execute(r'C:\Users\Public\Desktop\Firefox.lnk')
-        # if not self.find("Oficial", matching=0.97, waiting_time=10000):
-        #     self.not_found("Oficial")
+
+        self.execute(r'C:\Users\Public\Desktop\Google Chrome.lnk')
+
+
+        if not self.find( "Inicio", matching=0.97, waiting_time=10000):
+            self.not_found("Inicio")
+        self.wait(1000)
+        self.click()
+
+        if not self.find( "Conectar", matching=0.97, waiting_time=10000):
+           self.not_found("Conectar")
+        self.wait(2000)
+        self.click()
+        self.page_down()
+        # if not self.find( "Caixa", matching=0.97, waiting_time=10000):
+        #    self.not_found("Caixa")
         # self.click()
-        # if not self.find("Aceitar", matching=0.97, waiting_time=10000):
-        #     self.not_found("Aceitar")
-        # self.click()
-        # if not self.find("Financeiro", matching=0.97, waiting_time=10000):
-        #     self.not_found("Financeiro")
-        # self.click()
-        # if not self.find("Relatorios", matching=0.97, waiting_time=10000):
-        #     self.not_found("Relatorios")
-        # self.click()
-        # if not self.find("Boletos pagos", matching=0.97, waiting_time=10000):
-        #     self.not_found("Boletos pagos")
+        # self.paste('imp')
+        # self.wait(1000)
+        # self.type_down()
+        # if not self.find( "Balde", matching=0.97, waiting_time=10000):
+        #    self.not_found("Balde")
         # self.click()
         # self.wait(1000)
-        # if not self.find("Data", matching=0.97, waiting_time=10000):
-        #     self.not_found("Data")
+        #
+        # if not self.find( "Selecionar", matching=0.97, waiting_time=10000):
+        #    self.not_found("Selecionar")
         # self.click()
-        # self.paste(data)
-        # if not self.find("Data1", matching=0.97, waiting_time=10000):
-        #     self.not_found("Data1")
-        # self.click()
-        # self.paste(data)
-        # if not self.find("Baixar", matching=0.97, waiting_time=10000):
-        #     self.not_found("Baixar")
-        # self.click()
-        # if not self.find("Ok", matching=0.97, waiting_time=10000):
-        #     self.not_found("Ok")
-        # self.click()
-        # if not self.find("Espera", matching=0.97, waiting_time=20000):
-        #     self.not_found("Espera")
-
-        self.execute(r'C:\Users\silva.valdenir\Downloads')
-        self.wait(1000)
-        if not self.find("Arquivo", matching=0.97, waiting_time=10000):
-            self.not_found("Arquivo")
-
-        self.double_click()
-
-        if not self.find("Fecha mensagem", matching=0.97, waiting_time=10000):
-            self.not_found("Fecha mensagem")
-        self.click()
-
-        if not self.find("Pago", matching=0.97, waiting_time=10000):
-            self.not_found("Pago")
-        self.click()
-
-        self.type_keys(['ctrl', 'space'])
-        self.wait(1000)
-        if not self.find("Copia_valor_total", matching=0.97, waiting_time=10000):
-            self.not_found("Copia_valor_total")
-        self.click()
-
-        if not self.find("Fechar", matching=0.97, waiting_time=10000):
-            self.not_found("Fechar")
-        self.click()
-
-        self.execute('notepad.exe')
-        self.wait(1000)
-        self.kb_type('Baixas Volks', 200)
-        self.enter()
-        self.kb_type('Valor Total: ', 200)
-        self.control_v()
-        self.enter()
-        self.kb_type('Data: ', 200)
-        self.paste(data)
-        self.wait(4000)
-        if not self.find("FechaNote", matching=0.97, waiting_time=10000):
-            self.not_found("FechaNote")
-        self.click()
-        if not self.find("NaoSalvar", matching=0.97, waiting_time=10000):
-            self.not_found("NaoSalvar")
-        self.click()
-        if not self.find("Seleciona", matching=0.97, waiting_time=10000):
-            self.not_found("Seleciona")
-        self.click()
+        #
         
-        if not self.find("Recorta", matching=0.97, waiting_time=10000):
-            self.not_found("Recorta")
-        self.click()
-        if not self.find("Pasta", matching=0.97, waiting_time=10000):
-            self.not_found("Pasta")
-        self.double_click()
-        self.control_v()
-        if not self.find("Voltar", matching=0.97, waiting_time=10000):
-            self.not_found("Voltar")
-        self.click()
         
+       
         
 
 
@@ -140,3 +71,4 @@ class Bot(DesktopBot):
 
 if __name__ == '__main__':
     Bot.main()
+
