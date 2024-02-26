@@ -64,12 +64,10 @@ class Bot(DesktopBot):
         self.wait(50)
         pyautogui.click(329, 691)
         self.wait(1)
-    T = 0
-    while T >= 1000:
-        pyautogui.scroll(10)
-        sleep(1)
+        self.type_down()
+
         pyautogui.click(323,690)
-        T += 1
+
         # self.type_down()
         # self.wait(1)
         # pyautogui.click(329, 692)
