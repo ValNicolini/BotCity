@@ -25,20 +25,10 @@ class Bot(DesktopBot):
 
 
         self.execute(r'C:\Users\Public\Desktop\Google Chrome.lnk')
-        # self.wait(1000)
-        # if not self.find( "Pesquisa", matching=0.97, waiting_time=10000):
-        #     self.not_found("Pesquisa")
-        # self.click()
-        # self.paste('Botcity')
-        # self.enter()
-        # self.wait(1000)
-        # self.type_down()
-
-        
 
         if not self.find( "Inicio", matching=0.97, waiting_time=10000):
             self.not_found("Inicio")
-        self.wait(1000)
+        self.wait(2000)
         self.click()
 
         if not self.find( "Conectar", matching=0.97, waiting_time=10000):
@@ -51,121 +41,116 @@ class Bot(DesktopBot):
         self.wait(10000)
 
         pyautogui.click(323,451)
-        self.wait(100)
-        pyautogui.click(323, 487)
-        self.wait(100)
-        pyautogui.click(323, 530)
-        self.wait(100)
-        pyautogui.click(323, 567)
-        self.wait(100)
-        pyautogui.click(323, 609)
-        self.wait(100)
-        pyautogui.click(323, 651)
-        self.wait(100)
-        pyautogui.click(323, 691)
+        self.wait(200)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323, 451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323, 451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323, 451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
         self.type_down()
-        self.wait(100)
-        pyautogui.click(324, 691)
+        self.wait(200)
+        pyautogui.click(323,451)
+        self.type_down()
+        self.wait(200)
+        pyautogui.click(323,451)
+        self.type_down()
+        self.wait(200)
+        pyautogui.click(323,451)
         pyautogui.click(1089,554)
         if not self.find( "Deletar", matching=0.97, waiting_time=10000):
          self.not_found("Deletar")
-        self.wait(1000)
+        self.wait(2000)
         self.click()
 
 
         
         
-        
-        
-        
-        
-        
-       
-      
-           
 
-        
-        
-       
-        
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
