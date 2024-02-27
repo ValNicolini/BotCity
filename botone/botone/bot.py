@@ -26,6 +26,7 @@ class Bot(DesktopBot):
 
         self.execute(r'C:\Users\Public\Desktop\Google Chrome.lnk')
 
+
         if not self.find( "Inicio", matching=0.97, waiting_time=10000):
             self.not_found("Inicio")
         self.wait(2000)
@@ -44,7 +45,7 @@ class Bot(DesktopBot):
         self.wait(200)
         self.type_down()
 
-        for i in range(10):
+        for i in range(2):
             pyautogui.click(323, 451)
             self.type_down()
 
